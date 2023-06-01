@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>Shop Cart</title>
+    <link rel="stylesheet" href="./assets/cart.css" />
+  </head>
+  <body>
+    <jsp:include page="header_none.jsp" />
+    <div class="crumbread">
+      <a href="home">Trang chủ</a> /
+      <span class="current-page">Giỏ hàng</span> /
+    </div>
+    <h1 class="myCart">Giỏ hàng</h1>
+    <table class="list_order">
+      <tr>
+        <td><img src="./assets/img/items1-1.jpg" /></td>
+        <td>Astalift tinh dầu tẩy trang cleansing oil 120ml (IP02)</td>
+        <td class="price">150,000 <span>VNĐ</span></td>
+        <td>
+          <button class="button__number sub--product">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <input class="number--product" type="text" readonly value="2" />
+          <button class="button__number add--product">
+            <i class="fa-duotone fa-plus"></i>
+          </button>
+        </td>
+        <td class="order_delete">
+          <a href="" class="delete_product">Delete</a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="totalPrice">
+      <h1>Thành tiền:</h1>
+      <p class="pay">139,000 <span>VNĐ</span></p>
+    </div>
+
+    <jsp:include page="footer.jsp" />
+  </body>
+  <script src="./assets/js/cart.js"></script>
+  <script src="./assets/js/product-detail.js"></script>
+</html>
